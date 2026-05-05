@@ -1,0 +1,6 @@
+product,plan,monthly_usd,notes,source_key
+"GitHub Copilot","Pro",10,"Individual plan price (USD)",github_copilot_licenses
+"GitHub Copilot","Pro+",39,"Individual plan price (USD)",github_copilot_licenses
+"OpenCode","Go (after first month)",10,"First month $5 then $10/month",opencode_go
+"OpenAI Codex","Go",8,"Codex plan price (USD)",openai_codex_pricing
+"OpenAI Codex","Free",0,"Codex plan price (USD)",openai_codex_pricing

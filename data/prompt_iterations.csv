@@ -1,0 +1,19 @@
+model,scenario,iterations,tokens_consumed,recommended_use
+Claude Opus,Implement new example,2,7000,Complex example with design choices
+Claude Opus,Add new functionality,3,12000,Large ambiguous feature
+Claude Opus,Refactor,2,6000,Complex refactor only
+Claude Sonnet,Implement new example,3,6500,Standard implementation
+Claude Sonnet,Add new functionality,4,10000,Medium feature
+Claude Sonnet,Refactor,2,4500,Good default refactor
+Claude Haiku,Implement new example,5,6000,Simple boilerplate example
+Claude Haiku,Add new functionality,8,9500,Not ideal for large features
+Claude Haiku,Refactor,3,3000,Simple/local refactor
+OpenAI Codex,Implement new example,2,6500,Codebase-grounded task
+OpenAI Codex,Add new functionality,4,11000,Feature with tests
+OpenAI Codex,Refactor,2,5000,Code edit/refactor
+OpenAI GPT-5.4,Implement new example,2,7500,Hard example or unclear spec
+OpenAI GPT-5.4,Add new functionality,3,13000,Architecture-heavy feature
+OpenAI GPT-5.4,Refactor,2,6500,Risky/global refactor
+Gemini,Implement new example,3,6000,Standard example
+Gemini,Add new functionality,5,10500,Medium-large feature
+Gemini,Refactor,2,4200,Simple-to-medium refactor

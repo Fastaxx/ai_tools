@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* ====== Theme: "Citrus Lab" (light, high-contrast) ====== */
+:root{
+  --bg1:#fffaf0;
+  --bg2:#f7f5ff;
+  --fg:#20253a;
+  --muted:#5f6886;
+  --accent:#0066cc;
+  --accent2:#ff7a1a;
+  --good:#16803c;
+  --warn:#a96700;
+  --bad:#be2f2f;
+  --card:rgba(255,255,255,0.84);
+  --border:rgba(32,37,58,0.12);
+}
+
+.reveal .slide-background-content{
+  background:
+    radial-gradient(circle at 12% 14%, rgba(255,188,89,0.28) 0%, rgba(255,188,89,0) 35%),
+    radial-gradient(circle at 85% 20%, rgba(111,192,255,0.24) 0%, rgba(111,192,255,0) 36%),
+    linear-gradient(150deg, var(--bg1) 0%, var(--bg2) 100%);
+}
+
+.reveal{
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--fg);
+}
+
+.reveal h1,.reveal h2,.reveal h3{
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--fg);
+  letter-spacing: 0.1px;
+}
+
+.reveal h1{font-size:2.05em;}
+.reveal h2{font-size:1.48em;margin-bottom:.22em;}
+.reveal h3{font-size:1.0em;color:var(--accent);margin-top:.35em;}
+
+/* In-column card subtitles: keep them compact and avoid layout jumps */
+.reveal .card h3{
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: .78em;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 .35em 0;
+  line-height: 1.15;
+}
+
+.reveal p,.reveal li,.reveal td,.reveal th{color:var(--fg);}
+.reveal ul{margin-top:.18em;}
+.reveal li{margin:.14em 0;}
+
+.small{font-size:.78em;}
+.tiny{font-size:.60em;}
+.muted{color:var(--muted);}
+.accent{color:var(--accent);}
+.good{color:var(--good);}
+.warn{color:var(--warn);}
+.bad{color:var(--bad);}
+.mono{font-family: "JetBrains Mono", Consolas, monospace;}
+
+.badge{
+  display:inline-block;
+  padding:.16em .58em;
+  margin:.08em .12em .08em 0;
+  border-radius:999px;
+  background:rgba(0,102,204,0.10);
+  border:1px solid rgba(0,102,204,0.22);
+  color:#114178;
+  font-size:.58em;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:.72em .84em;
+  box-shadow:0 12px 36px rgba(31,43,74,.09);
+  animation: card-in .5s ease both;
+}
+
+@keyframes card-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.call{
+  border-left:4px solid var(--accent2);
+  padding-left:.75em;
+  margin-top:.45em;
+}
+
+.sources{
+  margin-top:.6em;
+  font-size:.58em;
+  color:var(--muted);
+}
+
+table{
+  font-size:.62em;
+  width:100%;
+  border-collapse:collapse;
+  background: rgba(255,255,255,0.55);
+}
+th,td{
+  border-bottom:1px solid rgba(32,37,58,0.14);
+  padding:.35em .42em;
+  vertical-align:top;
+}
+th{color:#123a72;}
+
+code{
+  color:#12294b;
+  background:rgba(0,102,204,0.09);
+  padding:.08em .22em;
+  border-radius:6px;
+}
+pre code{
+  font-size:.70em;
+  line-height:1.26;
+}
+
+a{color:#005fbd !important;}
+
+img{
+  border-radius:18px;
+  box-shadow:0 14px 34px rgba(31,43,74,.14);
+}
+
+.titlebox{
+  background: linear-gradient(135deg, rgba(255,255,255,0.88), rgba(240,246,255,0.88));
+  border: 1px solid rgba(0,102,204,0.18);
+  border-radius: 24px;
+  padding: 1em 1.1em;
+  box-shadow:0 12px 34px rgba(31,43,74,.12);
+}
+
+.bigline{font-size:1.15em; line-height:1.2; margin:.35em 0;}
+
