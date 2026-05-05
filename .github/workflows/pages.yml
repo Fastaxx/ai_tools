@@ -18,7 +18,7 @@ jobs:
               uses: quarto-dev/quarto-actions/setup@v2
 
             - name: Install Python dependencies
-              run: python3 -m pip install jupyter nbformat
+              run: python3 -m pip install jupyter nbformat pandas numpy matplotlib
 
             - name: Render and Publish
               uses: quarto-dev/quarto-actions/publish@v2
